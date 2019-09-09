@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#2C6DAB</color>
+
+    <color name="simple_calculator_background_color">#09B0DD</color>
+    <color name="simple_calculator_display_background_color">#202020</color>
+
+    <color name="numeral_calculator_background_color">#33CCFF</color>
+    <color name="numeral_converter_background_color">#00D6BB</color>
+</resources>

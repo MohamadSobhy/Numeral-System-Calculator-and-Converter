@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Simple - Binary Calculator</string>
+    <string name="converter_title">Number System Conversion</string>
+    <string name="empty_string" />
+    <string name="binary_calculator">Binary - other Systems Calculator</string>
+    <string name="banner_ad_unit_id">ca-app-pub-5461582702541198/8934896260</string>
+
+    <string name="sc_modulus_symbol">%</string>
+    <string name="division_symbol">/</string>
+    <string name="multiplication_symbol">*</string>
+    <string name="minus_symbol">-</string>
+    <string name="dot_symbol">.</string>
+    <string name="equal_symbol">=</string>
+    <string name="plus_symbol">+</string>
+    <string name="square_root_symbol">√</string>
+
+    <string name="delete_button_text">Del</string>
+    <string name="number_zero_text">0</string>
+    <string name="number_one_text">1</string>
+    <string name="number_two_text">2</string>
+    <string name="number_three_text">3</string>
+    <string name="number_four_text">4</string>
+    <string name="number_five_text">5</string>
+    <string name="number_six_text">6</string>
+    <string name="number_seven_text">7</string>
+    <string name="number_eight_text">8</string>
+    <string name="number_nine_text">9</string>
+</resources>

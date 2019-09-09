@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mohamedsobhy.binarycalculator.MainActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/simple_calculator_display_height_100dp"
+        android:background="@color/simple_calculator_display_background_color"
+        android:gravity="start|center"
+        android:padding="@dimen/padding_dimen_5dp"
+        android:lines="2"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/droid_sans_mono_font"
+        android:textSize="@dimen/simple_calculator_buttons_text_size_40sp" />
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout"
+        app:columnCount="4"
+        app:rowCount="5">
+
+            <Button
+                android:id="@+id/root"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/square_root_symbol"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_numbers" />
+
+            <Button
+                android:id="@+id/mudulus"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/sc_modulus_symbol"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_numbers" />
+
+            <Button
+                android:id="@+id/power"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="^"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_numbers" />
+
+            <Button
+                android:id="@+id/clean"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/delete_button_text"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_symbols" />
+
+            <Button
+                android:id="@+id/seven"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/number_seven_text"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_numbers"/>
+
+            <Button
+                android:id="@+id/eight"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/number_eight_text"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_numbers" />
+
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/number_nine_text"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_numbers" />
+
+            <Button
+                android:id="@+id/divide"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/division_symbol"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_symbols" />
+
+            <Button
+                android:id="@+id/four"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/number_four_text"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_numbers" />
+
+            <Button
+                android:id="@+id/five"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/number_five_text"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_numbers" />
+
+            <Button
+                android:id="@+id/six"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/number_six_text"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_numbers" />
+
+            <Button
+                android:id="@+id/multiply"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/multiplication_symbol"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_symbols" />
+
+            <Button
+                android:id="@+id/one"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/number_one_text"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_numbers" />
+
+            <Button
+                android:id="@+id/two"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/number_two_text"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_numbers" />
+
+            <Button
+                android:id="@+id/three"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/number_three_text"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_numbers" />
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/minus_symbol"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_symbols" />
+
+            <Button
+                android:id="@+id/zero"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/number_zero_text"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_numbers" />
+
+            <Button
+                android:id="@+id/dot"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/dot_symbol"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_numbers" />
+
+            <Button
+                android:id="@+id/equal"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/equal_symbol"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_numbers" />
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="@dimen/zero_dp_dimen"
+                android:layout_height="@dimen/zero_dp_dimen"
+                app:layout_rowWeight="1"
+                app:layout_columnWeight="1"
+                android:text="@string/plus_symbol"
+                android:textSize="@dimen/simple_calculator_buttons_text_size_40sp"
+                android:fontFamily="@font/droid_sans_mono_font"
+                android:background="@drawable/calculator_symbols" />
+
+    </android.support.v7.widget.GridLayout>
+</LinearLayout>

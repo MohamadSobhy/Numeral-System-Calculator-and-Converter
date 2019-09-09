@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zero_dp_dimen">0dp</dimen>
+    <dimen name="padding_dimen_5dp">5dp</dimen>
+
+    <dimen name="simple_calculator_display_height_100dp">100dp</dimen>
+
+    <dimen name="simple_calculator_buttons_text_size_40sp">40sp</dimen>
+</resources>
